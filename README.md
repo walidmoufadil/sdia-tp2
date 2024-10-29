@@ -3,10 +3,10 @@
 Ce projet contient une série d'exercices en Java pour mettre en pratique les concepts de Programmation Orientée Objet (POO). Les exercices couvrent divers aspects tels que l'héritage, le polymorphisme, les classes abstraites et les interfaces. Voici un aperçu des exercices et de leurs objectifs.
 
 ## Table des Matières
-1. [Exercice 1 : Gestion de Bibliothèque](#exercice-1--gestion-de-bibliothèque)
-2. [Exercice 2 : Gestion des Salaires en Entreprise](#exercice-2--gestion-des-salaires-en-entreprise)
-3. [Exercice 3 : Gestion des Commandes d'une Entreprise](#exercice-3--gestion-des-commandes-dune-entreprise)
-4. [Exercice 4 : Manipulation d'une Collection de Produits](#exercice-4--manipulation-dune-collection-de-produits)
+1. [Exercice 1 : Gestion de Bibliothèque](Exercice1)
+2. [Exercice 2 : Gestion des Salaires en Entreprise](Exercice2)
+3. [Exercice 3 : Gestion des Commandes d'une Entreprise](Exercice3)
+4. [Exercice 4 : Manipulation d'une Collection de Produits](Exercice4)
 
 ---
 
