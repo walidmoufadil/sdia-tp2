@@ -57,10 +57,10 @@ Ce projet permet de renforcer la maîtrise des concepts POO en Java à travers d
 This project includes a series of Java exercises to practice Object-Oriented Programming (OOP) concepts. The exercises cover various aspects such as inheritance, polymorphism, abstract classes, and interfaces. Below is an overview of the exercises and their objectives.
 
 ## Table of Contents
-1. [Exercise 1: Library Management](Exercice1--library-management)
-2. [Exercise 2: Salary Management in a Company](Exercice2--salary-management-in-a-company)
-3. [Exercise 3: Order Management for a Computer Sales Company](Exercice3--order-management-for-a-computer-sales-company)
-4. [Exercise 4: Managing a Product Collection](Exercice4--managing-a-product-collection)
+1. [Exercise 1: Library Management](Exercice1)
+2. [Exercise 2: Salary Management in a Company](Exercice2)
+3. [Exercise 3: Order Management for a Computer Sales Company](Exercice3)
+4. [Exercise 4: Managing a Product Collection](Exercice4)
 
 ---
 
