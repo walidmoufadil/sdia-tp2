@@ -1,5 +1,6 @@
 ## Class Diagram
-***![](captures/class_diagram.png)
+
+***![](captures/class_diagram.png)***
 
 # Classe Ordinateur
 
