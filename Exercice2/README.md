@@ -1,8 +1,7 @@
-# Documentation de la Classe Employe
+# Classe Employe
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Employe` est une classe abstraite qui représente un employé avec des attributs communs tels que le nom, le prénom, l'email, le téléphone et le salaire. Cette classe sert de base pour d'autres classes d'employés qui fourniront une implémentation spécifique pour le calcul du salaire.
 
@@ -25,7 +24,6 @@ La classe `Employe` est une classe abstraite qui représente un employé avec de
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Employe` class is an abstract class that represents an employee with common attributes such as name, surname, email, phone number, and salary. This class serves as a base for other employee classes that will provide a specific implementation for salary calculation.
 
@@ -45,11 +43,10 @@ The `Employe` class is an abstract class that represents an employee with common
 - `abstract double calculerSalaire()`: Abstract method to be implemented in subclasses to calculate the employee's salary.
 
 
-# Documentation de la Classe Ingenieur
+# Classe Ingenieur
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Ingenieur` hérite de la classe `Employe` et représente un ingénieur avec une spécialité. Elle fournit une implémentation pour le calcul du salaire de l'ingénieur en appliquant un coefficient sur le salaire de base.
 
@@ -68,7 +65,6 @@ La classe `Ingenieur` hérite de la classe `Employe` et représente un ingénieu
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Ingenieur` class inherits from the `Employe` class and represents an engineer with a specialty. It provides an implementation for calculating the engineer's salary by applying a coefficient to the base salary.
 
@@ -84,11 +80,10 @@ The `Ingenieur` class inherits from the `Employe` class and represents an engine
 - `String toString()`: Returns a string representation of the engineer, including all its attributes.
 
 
-# Documentation de la Classe Manager
+# Classe Manager
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Manager` hérite de la classe `Employe` et représente un manager qui supervise un service spécifique. Elle fournit une implémentation pour le calcul du salaire du manager en appliquant un coefficient supérieur au salaire de base.
 
@@ -106,7 +101,6 @@ La classe `Manager` hérite de la classe `Employe` et représente un manager qui
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Manager` class inherits from the `Employe` class and represents a manager who oversees a specific department. It provides an implementation for calculating the manager's salary by applying a higher coefficient to the base salary.
 
@@ -121,11 +115,10 @@ The `Manager` class inherits from the `Employe` class and represents a manager w
 - `String toString()`: Returns a string representation of the manager, including all its attributes.
 
 
-# Documentation de la Classe Main
+# Classe Main
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Main` contient la méthode principale `main`, qui sert de point d'entrée au programme. Elle crée des instances des classes `Ingenieur` et `Manager`, puis affiche leurs représentations sous forme de chaîne de caractères.
 
@@ -147,11 +140,12 @@ La classe `Main` contient la méthode principale `main`, qui sert de point d'ent
         - `service`: "clientèle"
     - Affiche les informations de l'ingénieur et du manager en utilisant la méthode `toString()`.
 
+***![](captures/Ex2-exe.png)***
+
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Main` class contains the `main` method, which serves as the entry point for the program. It creates instances of the `Ingenieur` and `Manager` classes, then displays their string representations.
 
@@ -172,3 +166,5 @@ The `Main` class contains the `main` method, which serves as the entry point for
         - `salaire`: 20000
         - `service`: "clientele"
     - Displays the information of the engineer and the manager using the `toString()` method.
+
+***![](captures/Ex2-exe.png)***

@@ -195,11 +195,7 @@ La méthode `main` génère les objets suivants et les affiche :
 
 ### Exemple de Sortie Console
 
-***![](captures/Ex1-exe1.png)***
-***![](captures/Ex1-exe2.png)***
-***![](captures/Ex1-exe3.png)***
-***![](captures/Ex1-exe4.png)***
-***![](captures/Ex1-exe5.png)***
+***![](captures/Ex1-exe.png)***
 
 
 
@@ -239,8 +235,4 @@ The `main` method generates the following objects and displays them:
 
 ### Console Output Example
 
-![](captures/Ex1-exe1.png)
-![](captures/Ex1-exe2.png)
-![](captures/Ex1-exe3.png)
-![](captures/Ex1-exe4.png)
-![](captures/Ex1-exe5.png)
+![](captures/Ex1-exe.png)

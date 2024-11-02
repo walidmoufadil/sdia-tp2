@@ -1,8 +1,7 @@
-# Documentation de la Classe Produit
+# Classe Produit
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Produit` représente un produit avec des attributs de base tels que le nom, la marque, le prix, la description et le stock disponible. Elle inclut également des méthodes pour accéder et modifier ces attributs.
 
@@ -36,7 +35,6 @@ La classe `Produit` représente un produit avec des attributs de base tels que l
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Produit` class represents a product with basic attributes such as name, brand, price, description, and available stock. It also includes methods to access and modify these attributes.
 
@@ -67,11 +65,10 @@ The `Produit` class represents a product with basic attributes such as name, bra
 - `void setStock(int stock)`: Sets the available quantity of the product.
 
 
-# Documentation de l'Interface IMetier
+# Interface IMetier
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 L'interface `IMetier` définit les opérations de gestion des produits. Elle spécifie les méthodes à implémenter pour manipuler des objets de type `Produit`.
 
@@ -86,7 +83,6 @@ L'interface `IMetier` définit les opérations de gestion des produits. Elle sp�
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `IMetier` interface defines the operations for managing products. It specifies the methods to be implemented for handling `Produit` objects.
 
@@ -98,11 +94,10 @@ The `IMetier` interface defines the operations for managing products. It specifi
 - `void delete(long id)`: Deletes a product by its identifier.
 
 
-# Documentation de la Classe MetierProduitImpl
+# Classe MetierProduitImpl
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `MetierProduitImpl` implémente l'interface `IMetier` et fournit des méthodes concrètes pour gérer une liste de produits. Elle permet d'ajouter, de récupérer, de rechercher et de supprimer des produits.
 
@@ -123,7 +118,6 @@ La classe `MetierProduitImpl` implémente l'interface `IMetier` et fournit des m
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `MetierProduitImpl` class implements the `IMetier` interface and provides concrete methods for managing a list of products. It allows adding, retrieving, searching, and deleting products.
 
@@ -141,11 +135,10 @@ The `MetierProduitImpl` class implements the `IMetier` interface and provides co
 - `void delete(long id)`: Removes a product from the list by its identifier.
 
 
-# Documentation de la Classe Application
+# Classe Application
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Application` fournit une interface utilisateur simple en ligne de commande pour gérer une liste de produits. Elle permet à l'utilisateur d'ajouter, de rechercher, d'afficher et de supprimer des produits.
 
@@ -176,7 +169,6 @@ La classe `Application` fournit une interface utilisateur simple en ligne de com
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Application` class provides a simple command-line user interface for managing a list of products. It allows the user to add, search, display, and delete products.
 
@@ -204,11 +196,10 @@ The `Application` class provides a simple command-line user interface for managi
 3. Enter the requested information when necessary.
 
 
-# Documentation de la Classe Main
+# Classe Main
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Main` contient la méthode principale de l'application. Elle est responsable du démarrage de l'application et de l'exécution de la méthode `Main` de la classe `Application`, qui gère l'interface utilisateur et les interactions avec les produits.
 
@@ -223,11 +214,16 @@ La classe `Main` contient la méthode principale de l'application. Elle est resp
 2. Exécutez la classe `Main` pour démarrer l'application.
 3. Suivez les instructions affichées dans le menu de l'application.
 
+***![](captures/Ex4-exe1.png)
+***![](captures/Ex4-exe2.png)
+***![](captures/Ex4-exe3.png)
+***![](captures/Ex4-exe4.png)
+***![](captures/Ex4-exe5.png)
+
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Main` class contains the main method of the application. It is responsible for starting the application and executing the `Main` method of the `Application` class, which manages the user interface and interactions with the products.
 
@@ -241,3 +237,9 @@ The `Main` class contains the main method of the application. It is responsible 
 1. Compile the application.
 2. Run the `Main` class to start the application.
 3. Follow the instructions displayed in the application menu.
+
+***![](captures/Ex4-exe1.png)
+***![](captures/Ex4-exe2.png)
+***![](captures/Ex4-exe3.png)
+***![](captures/Ex4-exe4.png)
+***![](captures/Ex4-exe5.png)
