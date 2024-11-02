@@ -1,8 +1,7 @@
-# Documentation de la Classe Personne
+# Classe Personne
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Personne` représente un individu avec des attributs tels que l'identifiant, le nom, le prénom, l'email, le téléphone et l'âge. Elle offre une méthode pour afficher les informations de la personne.
 
@@ -25,7 +24,6 @@ La classe `Personne` représente un individu avec des attributs tels que l'ident
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Personne` class represents an individual with attributes such as ID, name, surname, email, phone, and age. It includes a method to display the person's information.
 
@@ -46,11 +44,10 @@ The `Personne` class represents an individual with attributes such as ID, name, 
 
 
 
-# Documentation de la Classe Adherent
+# Classe Adherent
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Adherent` est une sous-classe de `Personne`. Elle représente un adhérent avec des attributs supplémentaires, comme un numéro d'adhérent, en plus des informations de base héritées de la classe `Personne`.
 
@@ -69,7 +66,6 @@ La classe `Adherent` est une sous-classe de `Personne`. Elle représente un adh�
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Adherent` class is a subclass of `Personne`. It represents a member with additional attributes, such as a membership number, along with the basic information inherited from the `Personne` class.
 
@@ -86,11 +82,10 @@ The `Adherent` class is a subclass of `Personne`. It represents a member with ad
 
 
 
-# Documentation de la Classe Livre
+# Classe Livre
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Livre` représente un livre avec un identifiant unique, un numéro ISBN, et un auteur associé. Elle inclut une méthode pour afficher les informations du livre et de l'auteur.
 
@@ -110,7 +105,6 @@ La classe `Livre` représente un livre avec un identifiant unique, un numéro IS
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Livre` class represents a book with a unique ID, an ISBN number, and an associated author. It includes a method to display the book and author information.
 
@@ -128,11 +122,10 @@ The `Livre` class represents a book with a unique ID, an ISBN number, and an ass
 
 
 
-# Documentation de la Classe Auteur
+# Classe Auteur
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Auteur` est une sous-classe de `Personne`. Elle représente un auteur avec des informations supplémentaires, telles qu'un numéro d'auteur unique, en plus des attributs hérités de la classe `Personne`.
 
@@ -151,7 +144,6 @@ La classe `Auteur` est une sous-classe de `Personne`. Elle représente un auteur
 
 ## English
 
-**Package:** `com.javaIntellij`
 
 The `Auteur` class is a subclass of `Personne`. It represents an author with additional information, such as a unique author number, along with the inherited attributes from the `Personne` class.
 
@@ -168,11 +160,10 @@ The `Auteur` class is a subclass of `Personne`. It represents an author with add
 
 
 
-# Documentation du Programme Principal - Classe Main
+# Programme Principal - Classe Main
 
 ## Français
 
-**Package :** `com.javaIntellij`
 
 La classe `Main` contient la méthode principale pour exécuter un exemple de l'application. Elle crée des instances des classes `Adherent`, `Auteur`, et `Livre`, puis affiche leurs informations en appelant les méthodes `afficher()`.
 
@@ -204,6 +195,11 @@ La méthode `main` génère les objets suivants et les affiche :
 
 ### Exemple de Sortie Console
 
+![screenshot execution](/captures/Ex1-exe1.png)
+![screenshot execution](/captures/Ex1-exe2.png)
+![screenshot execution](/captures/Ex1-exe3.png)
+![screenshot execution](/captures/Ex1-exe4.png)
+![screenshot execution](/captures/Ex1-exe5.png)
 
 
 
@@ -242,3 +238,9 @@ The `main` method generates the following objects and displays them:
     - Author: Cartner Maria (also displays their personal information)
 
 ### Console Output Example
+
+![screenshot execution](/captures/Ex1-exe1.png)
+![screenshot execution](/captures/Ex1-exe2.png)
+![screenshot execution](/captures/Ex1-exe3.png)
+![screenshot execution](/captures/Ex1-exe4.png)
+![screenshot execution](/captures/Ex1-exe5.png)
