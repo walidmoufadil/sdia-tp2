@@ -239,8 +239,8 @@ The `main` method generates the following objects and displays them:
 
 ### Console Output Example
 
-![screenshot execution](/captures/Ex1-exe1.png)
-![screenshot execution](/captures/Ex1-exe2.png)
-![screenshot execution](/captures/Ex1-exe3.png)
-![screenshot execution](/captures/Ex1-exe4.png)
-![screenshot execution](/captures/Ex1-exe5.png)
+![](captures/Ex1-exe1.png)
+![](captures/Ex1-exe2.png)
+![](captures/Ex1-exe3.png)
+![](captures/Ex1-exe4.png)
+![](captures/Ex1-exe5.png)

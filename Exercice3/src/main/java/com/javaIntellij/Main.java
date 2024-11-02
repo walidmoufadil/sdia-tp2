@@ -1,6 +1,5 @@
 package com.javaIntellij;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,12 +10,11 @@ public class Main {
         Ordinateur ordinateur1 = new Ordinateur("pro book","hp",4000,"c est un bon pc",100);
         Ordinateur ordinateur2 = new Ordinateur("elite book","hp",4500,"c est un bon pc",100);
         Ordinateur ordinateur3 = new Ordinateur("pro book","hp",4000,"c est un bon pc",100);
-        List<Ordinateur> ordinateurs = new ArrayList<>();
-        ordinateurs.add(ordinateur1);
-        ordinateurs.add(ordinateur2);
-        ordinateurs.add(ordinateur3);
 
-        Categorie categorie = new Categorie("pc portable","c'est maniable",ordinateurs);
+        Categorie categorie = new Categorie("pc portable","c'est maniable");
+        categorie.ajouterOrdinateur(ordinateur1);
+        categorie.ajouterOrdinateur(ordinateur2);
+        categorie.ajouterOrdinateur(ordinateur3);
 
         Client client = new Client("Doe","John","paris avenue","johnDoe@gmail.com","Paris","001234567890");
 
@@ -30,10 +28,7 @@ public class Main {
         ligneCommandes.add(ligne2);
         ligneCommandes.add(ligne3);
 
-        System.out.println("Reference : "+commande.getReference());
-        System.out.println("Date : "+commande.getDate());
-        System.out.println("Etat : "+commande.getEtat());
-        System.out.println("Client : "+commande.getClient().getNom());
+        System.out.println(commande.toString());
 
     }
 }

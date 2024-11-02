@@ -1,328 +1,313 @@
-# Documentation de la Classe Ordinateur
+# Classe Ordinateur
 
 ## Français
 
-**Package :** `com.javaIntellij`
-
-La classe `Ordinateur` représente un ordinateur avec des attributs tels que le nom, la marque, le prix, une description et le stock disponible. Elle offre des méthodes pour obtenir les valeurs de chaque attribut.
+La classe `Ordinateur` représente un ordinateur avec divers attributs comme le nom, la marque, le prix, une description et la quantité en stock. Elle propose des méthodes pour accéder et modifier les valeurs de chaque attribut, ainsi qu'une méthode pour afficher l'ordinateur sous forme de chaîne de caractères.
 
 ### Attributs
-- `id` (long) : Identifiant unique de l'ordinateur, généré automatiquement.
+- `id` (long) : Identifiant unique de l'ordinateur, généré automatiquement par un nombre aléatoire.
 - `nom` (String) : Nom du modèle de l'ordinateur.
 - `marque` (String) : Marque de l'ordinateur.
 - `prix` (double) : Prix de l'ordinateur.
 - `description` (String) : Description de l'ordinateur.
-- `stock` (int) : Quantité disponible en stock.
+- `stock` (int) : Quantité en stock de l'ordinateur.
 
 ### Constructeurs
-- `Ordinateur()` : Constructeur par défaut.
+- `Ordinateur()` : Constructeur par défaut, qui initialise un ordinateur sans définir ses attributs.
 - `Ordinateur(String nom, String marque, double prix, String description, int stock)` : Crée une nouvelle instance d'`Ordinateur` en initialisant les attributs avec les valeurs fournies et en générant un identifiant unique.
 
 ### Méthodes
 - `long getId()` : Retourne l'identifiant de l'ordinateur.
+- `void setId(long id)` : Définit l'identifiant de l'ordinateur.
 - `String getNom()` : Retourne le nom du modèle de l'ordinateur.
+- `void setNom(String nom)` : Définit le nom du modèle de l'ordinateur.
 - `String getMarque()` : Retourne la marque de l'ordinateur.
+- `void setMarque(String marque)` : Définit la marque de l'ordinateur.
 - `double getPrix()` : Retourne le prix de l'ordinateur.
+- `void setPrix(double prix)` : Définit le prix de l'ordinateur.
 - `String getDescription()` : Retourne la description de l'ordinateur.
+- `void setDescription(String description)` : Définit la description de l'ordinateur.
 - `int getStock()` : Retourne la quantité en stock de l'ordinateur.
+- `void setStock(int stock)` : Définit la quantité en stock de l'ordinateur.
+- `String toString()` : Retourne une représentation de l'ordinateur sous forme de chaîne de caractères, contenant les valeurs de tous les attributs.
 
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
-
-The `Ordinateur` class represents a computer with attributes such as name, brand, price, description, and available stock. It provides methods to retrieve each attribute's value.
+The `Ordinateur` class represents a computer with various attributes like name, brand, price, description, and stock quantity. It provides methods to access and modify each attribute, as well as a method to display the computer as a string.
 
 ### Attributes
-- `id` (long): Unique identifier for the computer, automatically generated.
+- `id` (long): Unique identifier for the computer, generated automatically with a random number.
 - `nom` (String): Model name of the computer.
 - `marque` (String): Brand of the computer.
 - `prix` (double): Price of the computer.
 - `description` (String): Description of the computer.
-- `stock` (int): Available stock quantity of the computer.
+- `stock` (int): Stock quantity of the computer.
 
 ### Constructors
-- `Ordinateur()`: Default constructor.
+- `Ordinateur()`: Default constructor, which initializes a computer without defining its attributes.
 - `Ordinateur(String nom, String marque, double prix, String description, int stock)`: Creates a new `Ordinateur` instance, initializing the attributes with the provided values and generating a unique identifier.
 
 ### Methods
 - `long getId()`: Returns the computer's unique identifier.
+- `void setId(long id)`: Sets the computer's unique identifier.
 - `String getNom()`: Returns the computer model's name.
+- `void setNom(String nom)`: Sets the computer model's name.
 - `String getMarque()`: Returns the computer brand.
+- `void setMarque(String marque)`: Sets the computer brand.
 - `double getPrix()`: Returns the computer's price.
+- `void setPrix(double prix)`: Sets the computer's price.
 - `String getDescription()`: Returns the computer's description.
+- `void setDescription(String description)`: Sets the computer's description.
 - `int getStock()`: Returns the available stock quantity of the computer.
+- `void setStock(int stock)`: Sets the available stock quantity of the computer.
+- `String toString()`: Returns a string representation of the computer, containing all attribute values.
 
+---
 
-# Documentation de la Classe Categorie
+# Classe Categorie
 
 ## Français
 
-**Package :** `com.javaIntellij`
-
-La classe `Categorie` représente une catégorie d'ordinateurs avec un identifiant unique, un nom, une description, et une liste d'ordinateurs appartenant à cette catégorie. Elle offre des méthodes pour gérer les ordinateurs associés.
+La classe `Categorie` représente une catégorie d'ordinateurs avec un identifiant unique, un nom, une description, et une liste d'objets `Ordinateur`. Elle permet d'ajouter, de supprimer et de rechercher des ordinateurs en fonction de leur prix.
 
 ### Attributs
-- `id` (long) : Identifiant unique de la catégorie, généré automatiquement.
+- `id` (long) : Identifiant unique de la catégorie, généré automatiquement par un nombre aléatoire.
 - `nom` (String) : Nom de la catégorie.
 - `description` (String) : Description de la catégorie.
-- `ordinateurList` (List\<Ordinateur\>) : Liste des ordinateurs associés à cette catégorie.
+- `ordinateurList` (List<Ordinateur>) : Liste des ordinateurs appartenant à cette catégorie.
 
 ### Constructeurs
-- `Categorie()` : Constructeur par défaut qui initialise une liste vide d'ordinateurs.
-- `Categorie(String nom, String description, List<Ordinateur> ordinateurList)` : Crée une nouvelle instance de `Categorie` en initialisant les attributs avec les valeurs fournies, y compris une liste d'ordinateurs.
+- `Categorie()` : Constructeur par défaut, qui initialise une catégorie sans définir ses attributs.
+- `Categorie(String nom, String description)` : Crée une nouvelle instance de `Categorie` avec un identifiant unique, un nom et une description.
 
 ### Méthodes
-- `void ajouterOrdinateur(Ordinateur ordinateur)` : Ajoute un ordinateur à la liste si celui-ci n'y est pas déjà présent.
-- `void supprimerOrdinateur(Ordinateur ordinateur)` : Supprime un ordinateur de la liste s'il est présent.
-- `List<Ordinateur> rechercherOrdinateur(double prix)` : Recherche et retourne une liste d'ordinateurs dont le prix correspond à la valeur spécifiée.
+- `void ajouterOrdinateur(Ordinateur ordinateur)` : Ajoute un objet `Ordinateur` à la liste `ordinateurList` s'il n'est pas déjà présent.
+- `void supprimerOrdinateur(Ordinateur ordinateur)` : Supprime un objet `Ordinateur` de la liste `ordinateurList`.
+- `List<Ordinateur> rechercherOrdinateur(double prix)` : Retourne une liste d'ordinateurs dont le prix est égal au prix spécifié.
+- `long getId()` : Retourne l'identifiant de la catégorie.
+- `void setId(long id)` : Définit l'identifiant de la catégorie.
+- `String getNom()` : Retourne le nom de la catégorie.
+- `void setNom(String nom)` : Définit le nom de la catégorie.
+- `String getDescription()` : Retourne la description de la catégorie.
+- `void setDescription(String description)` : Définit la description de la catégorie.
+- `List<Ordinateur> getOrdinateurList()` : Retourne la liste d'ordinateurs de la catégorie.
+- `void setOrdinateurList(List<Ordinateur> ordinateurList)` : Définit la liste d'ordinateurs de la catégorie.
+- `String toString()` : Retourne une représentation de la catégorie sous forme de chaîne de caractères, contenant les valeurs de tous les attributs.
 
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
-
-The `Categorie` class represents a category of computers with a unique ID, a name, a description, and a list of computers associated with this category. It provides methods for managing the associated computers.
+The `Categorie` class represents a category of computers with a unique identifier, name, description, and a list of `Ordinateur` objects. It allows adding, removing, and searching for computers based on their price.
 
 ### Attributes
-- `id` (long): Unique identifier for the category, automatically generated.
+- `id` (long): Unique identifier for the category, generated automatically with a random number.
 - `nom` (String): Name of the category.
 - `description` (String): Description of the category.
-- `ordinateurList` (List\<Ordinateur\>): List of computers associated with this category.
+- `ordinateurList` (List<Ordinateur>): List of computers belonging to this category.
 
 ### Constructors
-- `Categorie()`: Default constructor that initializes an empty list of computers.
-- `Categorie(String nom, String description, List<Ordinateur> ordinateurList)`: Creates a new `Categorie` instance, initializing the attributes with the provided values, including a list of computers.
+- `Categorie()`: Default constructor, which initializes a category without defining its attributes.
+- `Categorie(String nom, String description)`: Creates a new `Categorie` instance with a unique identifier, a name, and a description.
 
 ### Methods
-- `void ajouterOrdinateur(Ordinateur ordinateur)`: Adds a computer to the list if it is not already present.
-- `void supprimerOrdinateur(Ordinateur ordinateur)`: Removes a computer from the list if it is present.
-- `List<Ordinateur> rechercherOrdinateur(double prix)`: Searches for and returns a list of computers whose price matches the specified value.
+- `void ajouterOrdinateur(Ordinateur ordinateur)`: Adds an `Ordinateur` object to `ordinateurList` if it's not already present.
+- `void supprimerOrdinateur(Ordinateur ordinateur)`: Removes an `Ordinateur` object from `ordinateurList`.
+- `List<Ordinateur> rechercherOrdinateur(double prix)`: Returns a list of computers whose price matches the specified value.
+- `long getId()`: Returns the unique identifier of the category.
+- `void setId(long id)`: Sets the unique identifier of the category.
+- `String getNom()`: Returns the category name.
+- `void setNom(String nom)`: Sets the category name.
+- `String getDescription()`: Returns the category description.
+- `void setDescription(String description)`: Sets the category description.
+- `List<Ordinateur> getOrdinateurList()`: Returns the list of computers in the category.
+- `void setOrdinateurList(List<Ordinateur> ordinateurList)`: Sets the list of computers in the category.
+- `String toString()`: Returns a string representation of the category, including all attribute values.
 
+---
 
-# Documentation de la Classe Commande
+# Classe Commande
 
 ## Français
 
-**Package :** `com.javaIntellij`
-
-La classe `Commande` représente une commande effectuée par un client, incluant une référence unique, une date de commande, un état de la commande, et le client associé.
+La classe `Commande` représente une commande avec un identifiant unique, une référence, une date, un état, et un client associé. Elle offre des méthodes pour accéder et modifier les valeurs de chaque attribut.
 
 ### Attributs
-- `id` (long) : Identifiant unique de la commande, généré automatiquement.
+- `id` (long) : Identifiant unique de la commande, généré automatiquement par un nombre aléatoire.
 - `reference` (String) : Référence unique de la commande.
 - `date` (LocalDate) : Date de la commande.
-- `etat` (Etat) : État actuel de la commande.
-- `client` (Client) : Client qui a passé la commande.
+- `etat` (Etat) : État de la commande, représenté par une instance de l'énumération `Etat`.
+- `client` (Client) : Client associé à la commande.
 
 ### Constructeurs
-- `Commande()` : Constructeur par défaut.
+- `Commande()` : Constructeur par défaut, qui initialise une commande sans définir ses attributs.
 - `Commande(String reference, Client client, LocalDate date, Etat etat)` : Crée une nouvelle instance de `Commande` en initialisant les attributs avec les valeurs fournies et en générant un identifiant unique.
 
 ### Méthodes
 - `long getId()` : Retourne l'identifiant de la commande.
-- `String getReference()` : Retourne la référence unique de la commande.
+- `void setId(long id)` : Définit l'identifiant de la commande.
+- `String getReference()` : Retourne la référence de la commande.
+- `void setReference(String reference)` : Définit la référence de la commande.
 - `LocalDate getDate()` : Retourne la date de la commande.
-- `Etat getEtat()` : Retourne l'état actuel de la commande.
+- `void setDate(LocalDate date)` : Définit la date de la commande.
+- `Etat getEtat()` : Retourne l'état de la commande.
+- `void setEtat(Etat etat)` : Définit l'état de la commande.
 - `Client getClient()` : Retourne le client associé à la commande.
+- `void setClient(Client client)` : Définit le client associé à la commande.
+- `String toString()` : Retourne une représentation de la commande sous forme de chaîne de caractères, contenant les valeurs de tous les attributs, incluant le nom et le prénom du client.
 
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
-
-The `Commande` class represents an order made by a client, including a unique reference, order date, order status, and the associated client.
+The `Commande` class represents an order with a unique identifier, reference, date, status, and an associated client. It provides methods to access and modify each attribute.
 
 ### Attributes
-- `id` (long): Unique identifier for the order, automatically generated.
-- `reference` (String): Unique reference for the order.
+- `id` (long): Unique identifier for the order, generated automatically with a random number.
+- `reference` (String): Unique reference of the order.
 - `date` (LocalDate): Date of the order.
-- `etat` (Etat): Current status of the order.
-- `client` (Client): Client who placed the order.
+- `etat` (Etat): Status of the order, represented by an instance of the `Etat` enumeration.
+- `client` (Client): Client associated with the order.
 
 ### Constructors
-- `Commande()`: Default constructor.
+- `Commande()`: Default constructor, which initializes an order without defining its attributes.
 - `Commande(String reference, Client client, LocalDate date, Etat etat)`: Creates a new `Commande` instance, initializing the attributes with the provided values and generating a unique identifier.
 
 ### Methods
-- `long getId()`: Returns the order's unique identifier.
-- `String getReference()`: Returns the unique reference of the order.
-- `LocalDate getDate()`: Returns the order date.
-- `Etat getEtat()`: Returns the current status of the order.
+- `long getId()`: Returns the unique identifier of the order.
+- `void setId(long id)`: Sets the unique identifier of the order.
+- `String getReference()`: Returns the reference of the order.
+- `void setReference(String reference)`: Sets the reference of the order.
+- `LocalDate getDate()`: Returns the date of the order.
+- `void setDate(LocalDate date)`: Sets the date of the order.
+- `Etat getEtat()`: Returns the status of the order.
+- `void setEtat(Etat etat)`: Sets the status of the order.
 - `Client getClient()`: Returns the client associated with the order.
+- `void setClient(Client client)`: Sets the client associated with the order.
+- `String toString()`: Returns a string representation of the order, containing all attribute values, including the client's first and last names.
 
+---
 
-# Documentation de l'Enumération Etat
+# Énumération Etat
 
 ## Français
 
-**Package :** `com.javaIntellij`
+L'énumération `Etat` représente les différents états possibles d'une commande. Elle contient trois constantes qui reflètent la qualité de la commande.
 
-L'énumération `Etat` représente les différents états possibles pour un objet, comme une commande ou un produit. Elle propose trois niveaux d'état pour décrire la qualité ou le statut d'un élément.
-
-### Valeurs
-- `MAUVAISE` : Indique que l'état est mauvais.
-- `MOYENNE` : Indique que l'état est moyen.
-- `BONNE` : Indique que l'état est bon.
+### Constantes
+- `MAUVAISE` : Représente un état de mauvaise qualité pour la commande.
+- `MOYENNE` : Représente un état de qualité moyenne pour la commande.
+- `BONNE` : Représente un état de bonne qualité pour la commande.
 
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
+The `Etat` enumeration represents the different possible statuses of an order. It contains three constants that reflect the quality of the order.
 
-The `Etat` enumeration represents different possible states for an object, such as an order or a product. It provides three levels of status to describe the quality or condition of an item.
-
-### Values
-- `MAUVAISE`: Indicates that the state is poor.
-- `MOYENNE`: Indicates that the state is average.
-- `BONNE`: Indicates that the state is good.
-
-
-# Documentation de la Classe LigneCommande
-
-## Français
-
-**Package :** `com.javaIntellij`
-
-La classe `LigneCommande` représente une ligne dans une commande, associant une quantité spécifique d'un produit (ordinateur) à une commande donnée.
-
-### Attributs
-- `id` (long) : Identifiant unique de la ligne de commande, généré automatiquement.
-- `quantite` (int) : Quantité de l'ordinateur commandé.
-- `commande` (Commande) : Référence à la commande associée.
-- `ordinateur` (Ordinateur) : Référence à l'ordinateur commandé.
-
-### Constructeurs
-- `LigneCommande()` : Constructeur par défaut.
-- `LigneCommande(int quantite, Commande commande, Ordinateur ordinateur)` : Crée une nouvelle instance de `LigneCommande`, en initialisant la quantité, la commande, et l'ordinateur associé, et en générant un identifiant unique.
+### Constants
+- `MAUVAISE`: Represents a poor quality status for the order.
+- `MOYENNE`: Represents an average quality status for the order.
+- `BONNE`: Represents a good quality status for the order.
 
 ---
 
-## English
-
-**Package:** `com.javaIntellij`
-
-The `LigneCommande` class represents a line in an order, associating a specific quantity of a product (computer) with a given order.
-
-### Attributes
-- `id` (long): Unique identifier for the order line, automatically generated.
-- `quantite` (int): Quantity of the ordered computer.
-- `commande` (Commande): Reference to the associated order.
-- `ordinateur` (Ordinateur): Reference to the ordered computer.
-
-### Constructors
-- `LigneCommande()`: Default constructor.
-- `LigneCommande(int quantite, Commande commande, Ordinateur ordinateur)`: Creates a new `LigneCommande` instance, initializing the quantity, order, and associated computer, and generating a unique identifier.
-
-
-# Documentation de la Classe Client
+# Classe LigneCommande
 
 ## Français
 
-**Package :** `com.javaIntellij`
-
-La classe `Client` représente un client dans le système, incluant ses informations personnelles, ses coordonnées, et la liste de ses commandes.
+La classe `LigneCommande` représente une ligne de commande associée à une commande spécifique, indiquant la quantité d'un ordinateur commandé. Elle contient des attributs pour gérer l'identifiant de la ligne de commande, la quantité, la commande à laquelle elle appartient et l'ordinateur concerné.
 
 ### Attributs
-- `id` (long) : Identifiant unique du client, généré automatiquement.
-- `nom` (String) : Nom du client.
-- `prenom` (String) : Prénom du client.
-- `adresse` (String) : Adresse postale du client.
-- `email` (String) : Adresse e-mail du client.
-- `ville` (String) : Ville de résidence du client.
-- `telephone` (String) : Numéro de téléphone du client.
-- `commandes` (List\<Commande\>) : Liste des commandes passées par le client.
+- `id` (long) : Identifiant unique de la ligne de commande, généré automatiquement par un nombre aléatoire.
+- `quantite` (int) : Quantité d'ordinateurs dans cette ligne de commande.
+- `commande` (Commande) : La commande à laquelle cette ligne appartient.
+- `ordinateur` (Ordinateur) : L'ordinateur qui est commandé dans cette ligne.
 
 ### Constructeurs
-- `Client()` : Constructeur par défaut.
-- `Client(String nom, String prenom, String adresse, String email, String ville, String telephone)` : Crée une nouvelle instance de `Client` en initialisant les informations personnelles et de contact fournies, et en générant un identifiant unique.
+- `LigneCommande()` : Constructeur par défaut, qui initialise une ligne de commande sans définir ses attributs.
+- `LigneCommande(int quantite, Commande commande, Ordinateur ordinateur)` : Crée une nouvelle instance de `LigneCommande` en initialisant les attributs avec les valeurs fournies et en générant un identifiant unique.
 
 ### Méthodes
-- `long getId()` : Retourne l'identifiant unique du client.
-- `String getNom()` : Retourne le nom du client.
-- `String getPrenom()` : Retourne le prénom du client.
-- `String getAdresse()` : Retourne l'adresse du client.
-- `String getEmail()` : Retourne l'adresse e-mail du client.
-- `String getVille()` : Retourne la ville de résidence du client.
-- `String getTelephone()` : Retourne le numéro de téléphone du client.
-- `List<Commande> getCommandes()` : Retourne la liste des commandes du client.
-- `void ajouterCommande(Commande commande)` : Ajoute une commande à la liste des commandes du client, si elle n'est pas déjà présente.
-- `void supprimerCommande(Commande commande)` : Supprime une commande de la liste des commandes du client.
+- `long getId()` : Retourne l'identifiant de la ligne de commande.
+- `void setId(long id)` : Définit l'identifiant de la ligne de commande.
+- `int getQuantite()` : Retourne la quantité d'ordinateurs dans la ligne de commande.
+- `void setQuantite(int quantite)` : Définit la quantité d'ordinateurs dans la ligne de commande.
+- `Commande getCommande()` : Retourne la commande associée à la ligne.
+- `void setCommande(Commande commande)` : Définit la commande associée à la ligne.
+- `Ordinateur getOrdinateur()` : Retourne l'ordinateur associé à la ligne de commande.
+- `void setOrdinateur(Ordinateur ordinateur)` : Définit l'ordinateur associé à la ligne de commande.
+- `String toString()` : Retourne une représentation de la ligne de commande sous forme de chaîne de caractères, contenant les valeurs de tous les attributs, incluant les détails de la commande et de l'ordinateur.
 
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
-
-The `Client` class represents a client in the system, including their personal information, contact details, and a list of their orders.
+The `LigneCommande` class represents a line item in an order, indicating the quantity of a specific computer ordered. It contains attributes to manage the unique identifier of the line item, the quantity, the associated order, and the computer involved.
 
 ### Attributes
-- `id` (long): Unique identifier for the client, automatically generated.
-- `nom` (String): Client's last name.
-- `prenom` (String): Client's first name.
-- `adresse` (String): Client's postal address.
-- `email` (String): Client's email address.
-- `ville` (String): Client's city of residence.
-- `telephone` (String): Client's phone number.
-- `commandes` (List\<Commande\>): List of orders placed by the client.
+- `id` (long): Unique identifier for the line item, generated automatically with a random number.
+- `quantite` (int): Quantity of computers in this line item.
+- `commande` (Commande): The order to which this line belongs.
+- `ordinateur` (Ordinateur): The computer being ordered in this line item.
 
 ### Constructors
-- `Client()`: Default constructor.
-- `Client(String nom, String prenom, String adresse, String email, String ville, String telephone)`: Creates a new `Client` instance by initializing the personal and contact information provided and generating a unique identifier.
+- `LigneCommande()`: Default constructor, which initializes a line item without defining its attributes.
+- `LigneCommande(int quantite, Commande commande, Ordinateur ordinateur)`: Creates a new `LigneCommande` instance, initializing the attributes with the provided values and generating a unique identifier.
 
 ### Methods
-- `long getId()`: Returns the client's unique identifier.
-- `String getNom()`: Returns the client's last name.
-- `String getPrenom()`: Returns the client's first name.
-- `String getAdresse()`: Returns the client's address.
-- `String getEmail()`: Returns the client's email address.
-- `String getVille()`: Returns the client's city of residence.
-- `String getTelephone()`: Returns the client's phone number.
-- `List<Commande> getCommandes()`: Returns the list of the client’s orders.
-- `void ajouterCommande(Commande commande)`: Adds an order to the client’s list of orders if it's not already present.
-- `void supprimerCommande(Commande commande)`: Removes an order from the client’s list of orders.
+- `long getId()`: Returns the unique identifier of the line item.
+- `void setId(long id)`: Sets the unique identifier of the line item.
+- `int getQuantite()`: Returns the quantity of computers in the line item.
+- `void setQuantite(int quantite)`: Sets the quantity of computers in the line item.
+- `Commande getCommande()`: Returns the order associated with the line item.
+- `void setCommande(Commande commande)`: Sets the order associated with the line item.
+- `Ordinateur getOrdinateur()`: Returns the computer associated with the line item.
+- `void setOrdinateur(Ordinateur ordinateur)`: Sets the computer associated with the line item.
+- `String toString()`: Returns a string representation of the line item, including all attribute values, as well as the details of the order and the computer.
 
+---
 
-
-# Documentation de la Classe Main
+# Classe Main
 
 ## Français
 
-**Package :** `com.javaIntellij`
+La classe `Main` contient la méthode principale de l'application. Elle sert à exécuter le programme, en créant des instances des différentes classes (`Ordinateur`, `Categorie`, `Client`, `Commande`, et `LigneCommande`) et en les reliant entre elles. C'est ici que l'ensemble des objets est initialisé et manipulé.
 
-La classe `Main` sert de point d'entrée pour le programme. Elle crée des instances de `Ordinateur`, `Categorie`, `Client`, `Commande`, et `LigneCommande` afin de simuler une commande de plusieurs ordinateurs pour un client donné. Elle affiche également des informations de base sur la commande créée.
+### Méthode
+- `public static void main(String[] args)`: Point d'entrée de l'application.
+    - Crée plusieurs objets `Ordinateur`.
+    - Crée une `Categorie` et y ajoute les ordinateurs créés.
+    - Crée un `Client`.
+    - Crée une `Commande` associée au client.
+    - Crée plusieurs `LigneCommande` associées à la commande, chacune contenant un ordinateur et une quantité.
+    - Imprime les détails de la commande à l'aide de la méthode `toString()`.
 
-### Fonctionnalité
-1. **Création des Ordinateurs** : Trois instances de la classe `Ordinateur` sont créées avec des spécifications définies, puis ajoutées à une liste.
-2. **Catégorie** : Une instance de `Categorie` est créée, regroupant les ordinateurs dans une catégorie de produits.
-3. **Client** : Un client est créé avec ses informations personnelles.
-4. **Commande** : Une commande est créée pour ce client, avec une date actuelle et un état moyen.
-5. **Lignes de Commande** : Trois lignes de commande sont créées, chacune associant un ordinateur et une quantité spécifique, et ajoutées à une liste.
-6. **Affichage des Informations** : Les informations de la commande (référence, date, état, et nom du client) sont affichées dans la console.
+### Exécution
+Lors de l'exécution de la méthode `main`, les objets sont instanciés et leurs relations établies. La sortie affichera les informations de la commande créée, incluant les détails du client et des ordinateurs commandés.
 
-### Exécution du Programme
-La classe `Main` exécute le programme en initialisant les objets et en affichant les détails de la commande dans la console.
+***![](captures/Ex3-exe.png)***
 
 ---
 
 ## English
 
-**Package:** `com.javaIntellij`
+The `Main` class contains the application's main method. It serves to execute the program by creating instances of various classes (`Ordinateur`, `Categorie`, `Client`, `Commande`, and `LigneCommande`) and linking them together. This is where the entire object setup occurs.
 
-The `Main` class serves as the entry point for the program. It creates instances of `Ordinateur`, `Categorie`, `Client`, `Commande`, and `LigneCommande` to simulate an order of multiple computers for a given client. Basic information about the created order is then displayed.
+### Method
+- `public static void main(String[] args)`: The entry point of the application.
+    - Creates several `Ordinateur` objects.
+    - Creates a `Categorie` and adds the created computers to it.
+    - Creates a `Client`.
+    - Creates a `Commande` associated with the client.
+    - Creates multiple `LigneCommande` items associated with the order, each containing a computer and a quantity.
+    - Prints the details of the created order using the `toString()` method.
 
-### Functionality
-1. **Creating Computers**: Three instances of the `Ordinateur` class are created with specific attributes, then added to a list.
-2. **Category**: A `Categorie` instance is created, grouping the computers into a product category.
-3. **Client**: A client is created with personal details.
-4. **Order**: An order is created for this client, with the current date and a "MOYENNE" (medium) status.
-5. **Order Lines**: Three order lines are created, each associating a computer with a specific quantity, and added to a list.
-6. **Display Information**: The order details (reference, date, status, and client name) are displayed in the console.
+### Execution
+When the `main` method is executed, the objects are instantiated, and their relationships are established. The output will display the information of the created order, including the details of the client and the ordered computers.
 
-### Running the Program
-The `Main` class executes the program by initializing the objects and displaying the order details in the console.
+***![](captures/Ex3-exe.png)***
+
+

@@ -10,18 +10,16 @@ public class Categorie {
     private long id;
     private String nom;
     private String description;
-    private List<Ordinateur> ordinateurList;
+    private List<Ordinateur> ordinateurList = new ArrayList<>();
 
 
     public Categorie() {
-        this.ordinateurList = new ArrayList<>();
     }
 
-    public Categorie(String nom, String description, List<Ordinateur> ordinateurList) {
+    public Categorie(String nom, String description) {
         this.id = new Random().nextLong();
         this.nom = nom;
         this.description = description;
-        this.ordinateurList = ordinateurList;
     }
 
 
@@ -37,5 +35,47 @@ public class Categorie {
 
     public List<Ordinateur> rechercherOrdinateur(double prix) {
                 return ordinateurList.stream().filter((ordinateur -> ordinateur.getPrix() == prix)).collect(Collectors.toList());
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public List<Ordinateur> getOrdinateurList() {
+        return ordinateurList;
+    }
+
+    public void setOrdinateurList(List<Ordinateur> ordinateurList) {
+        this.ordinateurList = ordinateurList;
+    }
+
+    @Override
+    public String toString() {
+        return "Categorie{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                ", description='" + description + '\'' +
+                ", ordinateurList=" + ordinateurList.toString() +
+                '}';
     }
 }

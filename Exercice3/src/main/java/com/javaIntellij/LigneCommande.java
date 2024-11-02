@@ -18,4 +18,45 @@ public class LigneCommande {
         this.ordinateur = ordinateur;
     }
 
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public int getQuantite() {
+        return quantite;
+    }
+
+    public void setQuantite(int quantite) {
+        this.quantite = quantite;
+    }
+
+    public Commande getCommande() {
+        return commande;
+    }
+
+    public void setCommande(Commande commande) {
+        this.commande = commande;
+    }
+
+    public Ordinateur getOrdinateur() {
+        return ordinateur;
+    }
+
+    public void setOrdinateur(Ordinateur ordinateur) {
+        this.ordinateur = ordinateur;
+    }
+
+    @Override
+    public String toString() {
+        return "LigneCommande{" +
+                "id=" + id +
+                ", quantite=" + quantite +
+                ", commande=" + commande.toString() +
+                ", ordinateur=" + ordinateur.toString() +
+                '}';
+    }
 }
