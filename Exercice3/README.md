@@ -1,3 +1,6 @@
+## Class Diagram
+***![](captures/class_diagram.png)
+
 # Classe Ordinateur
 
 ## Français
